@@ -1,0 +1,142 @@
+.thrashcan{
+    border: 2px solid #7c7c7c;
+    border-top-color: #fff;
+    border-left-color: #fff;
+    background: #c0c0c0;
+    position: fixed;
+    left: 460px;
+    bottom: 200px;
+    width: 500px;
+    height: 353px;
+    visibility: hidden;
+
+}
+
+.thrashtop{
+    display: flex;
+    flex-flow: row nowrap;
+    font-weight: bold;
+    justify-content: space-between;
+    width: 488px;
+    height: 27px;
+    padding: 2px 3px 3px;
+    margin: 3px 2px 1px 3px;
+    z-index: 1000;
+
+    background: #000080;
+    color: #fff;
+    padding: 4px;
+    font-weight: bold;
+
+}
+.thrashtop:hover{
+    cursor: move;
+    
+    }
+
+.thrashx{
+    background: no-repeat center #ccc;
+    border: 2px solid #7c7c7c;
+    border-top-color: #fff;
+    border-left-color: #fff;
+    height: 17px;
+    width: 17px;
+    float: right;
+    margin-left: 2px;
+    background-image: url(https://win98icons.alexmeub.com/images/close-icon.png);
+
+}
+
+
+.thrashx:active{
+    border: 2px solid #7c7c7c;
+    border-bottom-color: #fff;
+    border-right-color: #fff;
+    transform: translateX(1px) translateY(1px);
+
+}
+
+
+
+.thrashvit{    
+    width: 480px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+
+    background: rgb(240, 240, 240);
+    overflow: hidden;
+    margin-top: 10px;
+    border: 2px solid #7c7c7c;
+    border-bottom-color: #fff;
+    border-right-color: #fff;
+
+
+
+}
+
+
+.Putin {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 55px;
+    left: 0px;
+  }
+  
+.Putinicon{
+    height: 50px;
+    cursor: pointer;
+    width: 50px;
+    background: url("Putin.jpeg");
+    background-size: contain;
+}
+
+
+
+.Putintext{
+    color: rgb(0, 0, 0);
+      font-size: 12px;
+      margin-top: 5px;
+      margin-bottom: 0;
+      cursor: pointer;
+      font-weight: bold;
+  
+}
+
+
+.Aberdeen {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 55px;
+    left: 75px;
+  }
+  
+.Aberdeenicon{
+    height: 50px;
+    cursor: pointer;
+    width: 50px;
+    background: url("AberdeenIcon.png");
+    background-size: contain;
+}
+
+
+
+.Aberdeentext{
+    color: rgb(0, 0, 0);
+      font-size: 12px;
+      margin-top: 5px;
+      margin-bottom: 0;
+      cursor: pointer;
+      font-weight: bold;
+  
+}

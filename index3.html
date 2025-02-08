@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="Splash.css" />
+    <link rel="stylesheet" href="CssMain.css" />
+    <link rel="stylesheet" href="toolbar.css" />
+    <link rel="stylesheet" href="Icon.css" />
+    <link rel="stylesheet" href="OpenPopUp4.css" />
+    <link rel="stylesheet" href="Shutdown.css" />
+    <link rel="stylesheet" href="email.css" />
+    <link rel="stylesheet" href="miniräknare.css" />
+    <link rel="stylesheet" href="Music2.css" />
+    <link rel="stylesheet" href="thrash.css" />
+
+    <script src="Time.js"></script>
+    <script src="Dragable.js"></script>
+
+    <title>Lucas Windows 95</title>
+  </head>
+
+  <body>
+    <div class="bootscreen"></div>
+
+    <!--------------------------------------------------------------------------------------------------------------------->
+
+    <div class="Aboutme" draggable="true">
+      <span class="Aboutmeicon" tabindex="0"></span>
+      <p class="Aboutmetext">About Me</p>
+    </div>
+
+    <div class="CV" draggable="true">
+      <span id="myDiv" class="CVicon" ondblclick="openCV()" tabindex="0"></span>
+      <p class="CVtext">CV</p>
+    </div>
+
+    <div class="Github" id="GithubLink" draggable="true">
+      <span class="Githubicon" tabindex="0"></span>
+      <p class="Githubtext">Github</p>
+    </div>
+
+    <div class="Linkedin" id="LinkedinLink" draggable="true">
+      <span class="Linkedinicon" tabindex="0"></span>
+
+      <p class="Linkedintext">Linkedin</p>
+    </div>
+
+    <div class="Calc" draggable="true">
+      <span
+        class="Calcicon"
+        id="miniräknarebutton"
+        ondblclick="toggleMiniräknare()"
+        tabindex="0"
+      ></span>
+      <p class="Calctext">Calculator</p>
+    </div>
+
+    <div class="Soptunna" draggable="true">
+      <span
+        class="Soptunnaicon"
+        ondblclick="togglethrashcan()"
+        tabindex="0"
+      ></span>
+      <p class="Soptunnatext">Recycle bin</p>
+    </div>
+
+    <div class="Music" draggable="true">
+      <span class="Musicicon" ondblclick="toggleMusic()" tabindex="0"></span>
+      <p class="Musictext">Media Player</p>
+    </div>
+
+    <script src="Links.js"></script>
+
+    <!--------------------------------------------------------------------------------------------------------------------->
+
+    <div id="toolbar">
+      <div class="toolbar-start-menu">
+        <button class="start-button" onclick="togglePopup()">Start</button>
+      </div>
+
+      <div class="toolbar-separator"></div>
+
+      <div class="toolbar-left">
+        <button class="toolbar-icon ie" onclick="openExplorer()"></button>
+      </div>
+
+      <div class="toolbar-separator"></div>
+
+      <div class="toolbar-right">
+        <div class="time">
+          <span class="hour"></span>:<span class="minutes"></span>
+        </div>
+      </div>
+
+      <div class="popup" id="popup">
+        <div class="start__menu-main-side-text">
+          <div class="ninefive">95</div>
+          <div class="windows">Windows</div>
+        </div>
+
+        <div class="documents">
+          <div class="documentsicon"></div>
+          <div class="documentstext">Documents</div>
+
+          <div class="childdocuments">
+            <div class="childCV" onclick="openCV()">
+              <div class="childCVicon"></div>
+              <div class="childCVtext">CV</div>
+            </div>
+
+            <script>
+              function openCV() {
+                window.open("CV.pdf", "_blank");
+              }
+            </script>
+          </div>
+        </div>
+
+        <div class="games" onclick="toggleMusic()">
+          <div class="gamesicon"></div>
+          <div class="gamestext">Music</div>
+        </div>
+
+        <div class="sendemail" onclick="togglethrashcan()">
+          <div class="sendemailicon"></div>
+          <div class="sendemailtext">Recycle bin</div>
+        </div>
+
+        <div class="explorer" onclick="openExplorer()">
+          <div class="explorericon"></div>
+          <div class="explorertext">Explorer</div>
+        </div>
+        <script>
+          function openExplorer() {
+            window.open("https://google.com", "_blank", "width=800,height=600");
+          }
+        </script>
+
+        <div class="calculator" onclick="toggleMiniräknare()">
+          <div class="calculatoricon"></div>
+          <div class="calculatortext">Calculator</div>
+        </div>
+
+        <div class="sidebar"></div>
+
+        <div class="restart" onClick="window.location.reload();">
+          <div class="restarticon"></div>
+          <div class="restarttext">Restart</div>
+        </div>
+
+        <div class="shutdown" id="myDiv11" onclick="shutdownEffect()">
+          <div class="shutdownicon"></div>
+          <div class="shutdowntext">Shutdown</div>
+        </div>
+
+        <script>
+          function shutdownEffect() {
+            document.body.classList.add("grayscale"); // Step 1: Fade to grayscale
+
+            setTimeout(() => {
+              document.body.classList.add("blackout"); // Step 2: Everything turns black
+            }, 3000); // Wait for grayscale transition
+
+            setTimeout(() => {
+              document.body.classList.add("fade-out"); // Step 3: Fade out everything
+            }, 4000); // Wait for blackout transition
+          }
+        </script>
+
+        <script>
+          const myDiv11 = document.getElementById("myDiv11");
+
+          myDiv11.addEventListener("click", () => {
+            document.body.classList.toggle("grayscale");
+          });
+        </script>
+      </div>
+    </div>
+
+    <!--------------------------------------------------------------------------------------------------------------------->
+
+    <div class="thrashcan" id="thrashcan">
+      <div class="thrashtop">
+        Thrashcan <button class="thrashx" onclick="togglethrashcan()"></button>
+      </div>
+      <div class="thrashvit">
+        <div class="Putin">
+          <div class="Putinicon"></div>
+          <p class="Putintext">Putin.jpeg</p>
+        </div>
+
+        <div class="Aberdeen">
+          <div class="Aberdeenicon"></div>
+          <p class="Aberdeentext">Aberdeen.jpeg</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      el = document.querySelector(".thrashcan");
+      let newPosX = 0,
+        newPosY = 0,
+        startPosX = 0,
+        startPosY = 0;
+
+      // when the user clicks down on the element
+      el.addEventListener("mousedown", function (e) {
+        e.preventDefault();
+
+        // get the starting position of the cursor
+        startPosX = e.clientX;
+        startPosY = e.clientY;
+
+        document.addEventListener("mousemove", mouseMove);
+
+        document.addEventListener("mouseup", function () {
+          document.removeEventListener("mousemove", mouseMove);
+        });
+      });
+      function mouseMove(e) {
+        // calculate the new position
+        newPosX = startPosX - e.clientX;
+        newPosY = startPosY - e.clientY;
+
+        // with each move we also want to update the start X and Y
+        startPosX = e.clientX;
+        startPosY = e.clientY;
+
+        // set the element's new position:
+        el.style.top = el.offsetTop - newPosY + "px";
+        el.style.left = el.offsetLeft - newPosX + "px";
+      }
+    </script>
+
+    <!--------------------------------------------------------------------------------------------------------------------->
+
+    <div class="miniräknare" id="miniräknare1">
+      <div class="flytta" id="miniräknare2">
+        Calculator
+        <button class="Stäng98" onclick="toggleMiniräknare()"></button>
+      </div>
+
+      <div class="Calculator">
+        <form>
+          <div class="display">
+            <input class="displaydisplay" type="text" name="display" />
+          </div>
+          <div>
+            <input
+              type="button"
+              value="AC"
+              onclick="display.value = ''"
+              class="operator"
+            />
+            <input
+              type="button"
+              value="DE"
+              onclick="display.value = display.value.toString().slice(0,-1)"
+              class="operator"
+            />
+            <input
+              type="button"
+              value="."
+              onclick="display.value += '.'"
+              class="operator"
+            />
+            <input
+              type="button"
+              value="/"
+              onclick="display.value += '/'"
+              class="operator"
+            />
+          </div>
+          <div>
+            <input
+              type="button"
+              value="7"
+              onclick="display.value += '7'"
+              class="siffror"
+            />
+            <input
+              type="button"
+              value="8"
+              onclick="display.value += '8'"
+              class="siffror"
+            />
+            <input
+              type="button"
+              value="9"
+              onclick="display.value += '9'"
+              class="siffror"
+            />
+            <input
+              type="button"
+              value="*"
+              onclick="display.value += '*'"
+              class="operator"
+            />
+          </div>
+          <div>
+            <input
+              type="button"
+              value="4"
+              onclick="display.value += '4'"
+              class="siffror"
+            />
+            <input
+              type="button"
+              value="5"
+              onclick="display.value += '5'"
+              class="siffror"
+            />
+            <input
+              type="button"
+              value="6"
+              onclick="display.value += '6'"
+              class="siffror"
+            />
+            <input
+              type="button"
+              value="-"
+              onclick="display.value += '-'"
+              class="operator"
+            />
+          </div>
+          <div>
+            <input
+              type="button"
+              value="1"
+              onclick="display.value += '1'"
+              class="siffror"
+            />
+            <input
+              type="button"
+              value="2"
+              onclick="display.value += '2'"
+              class="siffror"
+            />
+            <input
+              type="button"
+              value="3"
+              onclick="display.value += '3'"
+              class="siffror"
+            />
+            <input
+              type="button"
+              value="+"
+              onclick="display.value += '+'"
+              class="operator"
+            />
+          </div>
+          <div>
+            <input
+              type="button"
+              value="00"
+              onclick="display.value += '00'"
+              class="siffror"
+            />
+            <input
+              type="button"
+              value="0"
+              onclick="display.value += '0'"
+              class="siffror"
+            />
+            <input
+              type="button"
+              value="="
+              onclick="display.value = eval(display.value)"
+              class="equal"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      // Get the draggable element
+      const dragElement = document.getElementById("miniräknare1");
+
+      // Initialize variables to keep track of the mouse position and element position
+      let pos1 = 0,
+        pos2 = 0,
+        pos3 = 0,
+        pos4 = 0;
+
+      // Add a mousedown event listener to the element
+      dragElement.addEventListener("mousedown", dragMouseDown);
+
+      function dragMouseDown(event) {
+        event.preventDefault();
+        // Get the current mouse position
+        pos3 = event.clientX;
+        pos4 = event.clientY;
+
+        // Add mousemove and mouseup event listeners to the document
+        document.addEventListener("mousemove", elementDrag);
+        document.addEventListener("mouseup", stopElementDrag);
+      }
+
+      function elementDrag(event) {
+        // Calculate the new position of the element
+        pos1 = pos3 - event.clientX;
+        pos2 = pos4 - event.clientY;
+        pos3 = event.clientX;
+        pos4 = event.clientY;
+
+        // Set the new position of the element
+        dragElement.style.top = dragElement.offsetTop - pos2 + "px";
+        dragElement.style.left = dragElement.offsetLeft - pos1 + "px";
+      }
+
+      function stopElementDrag() {
+        // Remove mousemove and mouseup event listeners from the document
+        document.removeEventListener("mousemove", elementDrag);
+        document.removeEventListener("mouseup", stopElementDrag);
+      }
+    </script>
+
+    <!--------------------------------------------------------------------------------------------------------------------->
+
+    <script>
+      window.onload = function () {
+        draggable(document.getElementById("contanier1"));
+      };
+
+      function draggable(el) {
+        el.addEventListener("mousedown", function (e) {
+          var offsetX =
+            e.clientX - parseInt(window.getComputedStyle(this).left);
+          var offsetY = e.clientY - parseInt(window.getComputedStyle(this).top);
+
+          function mouseMoveHandler(e) {
+            el.style.top = e.clientY - offsetY + "px";
+            el.style.left = e.clientX - offsetX + "px";
+          }
+
+          function reset() {
+            window.removeEventListener("mousemove", mouseMoveHandler);
+            window.removeEventListener("mouseup", reset);
+          }
+
+          window.addEventListener("mousemove", mouseMoveHandler);
+          window.addEventListener("mouseup", reset);
+        });
+      }
+    </script>
+
+    <div class="contanier" id="contanier1">
+      <div class="topbar">
+        Windows Media Player
+        <button class="Stäng" onclick="toggleMusic()"></button>
+      </div>
+
+      <div class="img">
+        <img id="thumb" src="U2bild.jpeg" alt="" />
+      </div>
+
+      <div class="spelare">
+        <div class="action">
+          <button class="prev" onclick="prevPlay()">
+            <i class="bx bx-skip-previous"></i>
+          </button>
+
+          <button onclick="playPause()" class="play" id="play">
+            <i class="bx bx-play"></i>
+          </button>
+
+          <button class="next" onclick="nextPlay()">
+            <i class="bx bx-skip-next"></i>
+          </button>
+        </div>
+
+        <audio id="song">
+          <source src="song.mp3" type="audio/mpeg" />
+        </audio>
+
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            var audio = document.getElementById("song");
+            audio.pause();
+            audio.autoplay = false;
+          });
+        </script>
+
+        <input type="range" id="progress" value="0" />
+
+        <div class="svartbakgrund">
+          <div class="timer">
+            <span id="start">2:28</span> /
+            <span id="end">4:33</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="details">
+        <p class="title1" id="title"></p>
+        -
+        <p class="musician1" id="musician"></p>
+      </div>
+    </div>
+
+    <script>
+      const songs = [
+        {
+          name: "One Tree Hill",
+          link: "U2.mp3",
+          artists: "U2",
+          image: "U2bild.jpeg",
+        },
+
+        {
+          name: "Wonderwall",
+          link: "Wonderwall (Remastered).mp3",
+          artists: "Oasis",
+          image: "Oasis.jpg",
+        },
+
+        {
+          name: "Fix You",
+          link: "fix.mp3",
+          artists: "Coldplay",
+          image: "Fixyou.png",
+        },
+        {
+          name: "Running to Stand Still",
+          link: "running.mp3",
+          artists: "U2",
+          image: "U2bild.jpeg",
+        },
+
+        {
+          name: "Don't Look Back In Anger",
+          link: "Don't Look Back In Anger.mp3",
+          artists: "Oasis",
+          image: "Oasis.jpg",
+        },
+
+        {
+          name: "Video Killed the Radio Star",
+          link: "buggles.mp3",
+          artists: "Buggles",
+          image: "buggles.webp",
+        },
+
+        {
+          name: "Morning Glory",
+          link: "Morning Glory (Remastered).mp3",
+          artists: "Oasis",
+          image: "Oasis.jpg",
+        },
+
+        {
+          name: "Stay With Me",
+          link: "miki.mp3",
+          artists: "Miki matsubara",
+          image: "matsubara.jpeg",
+        },
+      ];
+
+      var progress = document.querySelector("#progress");
+      var song = document.querySelector("#song");
+      var playBtn = document.querySelector("#play i");
+      var index = 0;
+      var img = document.querySelector(".img img");
+
+      var title = document.querySelector("#title");
+      var thumb = document.querySelector("#thumb");
+      var artist = document.querySelector("#musician");
+
+      var start = document.querySelector("#start");
+      var end = document.querySelector("#end");
+
+      song.src = songs[index].link;
+
+      title.innerHTML = songs[index].name;
+      artist.innerHTML = songs[index].artists;
+      thumb.src = songs[index].image;
+
+      song.onloadedmetadata = function () {
+        progress.max = song.duration;
+        progress.value = song.currentTime;
+
+        setInterval(() => {
+          var min = Math.floor(song.duration / 60);
+          var sec = Math.floor(song.duration % 60);
+
+          var curMin = Math.floor(song.currentTime / 60);
+          var curSec = Math.floor(song.currentTime % 60);
+
+          if (sec < 10) {
+            sec = "0" + sec;
+          }
+          if (curSec < 10) {
+            curSec = "0" + curSec;
+          }
+          if (min < 10) {
+            min = "0" + min;
+          }
+          if (curMin < 10) {
+            curMin = "0" + curMin;
+          }
+
+          end.innerHTML = min + ":" + sec;
+          start.innerHTML = curMin + ":" + curSec;
+        }, 1000);
+      };
+
+      function playPause() {
+        if (playBtn.classList.contains("bx-pause")) {
+          song.pause();
+          playBtn.classList.remove("bx-pause");
+          playBtn.classList.add("bx-play");
+          img.classList.remove("play");
+        } else {
+          song.play();
+          playBtn.classList.remove("bx-play");
+          playBtn.classList.add("bx-pause");
+          img.classList.add("play");
+        }
+      }
+
+      if (song.play()) {
+        setInterval(() => {
+          progress.value = song.currentTime;
+          if (song.currentTime == song.duration) {
+            nextPlay();
+          }
+        }, 1000);
+      }
+
+      progress.onchange = function () {
+        song.play();
+        song.currentTime = progress.value;
+        playBtn.classList.remove("bx-play");
+        playBtn.classList.add("bx-pause");
+        img.classList.add("play");
+      };
+
+      function nextPlay() {
+        index = index + 1;
+        if (index > songs.length) {
+          index = 0;
+          song.src = songs[index].link;
+          title.innerHTML = songs[index].name;
+          artist.innerHTML = songs[index].artists;
+          thumb.src = songs[index].image;
+          song.play();
+        } else {
+          song.src = songs[index].link;
+          title.innerHTML = songs[index].name;
+          artist.innerHTML = songs[index].artists;
+          thumb.src = songs[index].image;
+          song.play();
+        }
+      }
+
+      function prevPlay() {
+        index = index - 1;
+        if (index < 0) {
+          index = songs.length;
+          song.src = songs[index].link;
+          title.innerHTML = songs[index].name;
+          artist.innerHTML = songs[index].artists;
+          thumb.src = songs[index].image;
+          song.play();
+        } else {
+          song.src = songs[index].link;
+          title.innerHTML = songs[index].name;
+          artist.innerHTML = songs[index].artists;
+          thumb.src = songs[index].image;
+          song.play();
+        }
+      }
+    </script>
+
+    <!--------------------------------------------------------------------------------------------------------------------->
+
+    <script src="Functions.js"></script>
+  </body>
+</html>
