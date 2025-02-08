@@ -1,0 +1,124 @@
+.miniräknare{
+    border: 2px solid #7c7c7c;
+    border-top-color: #fff;
+    border-left-color: #fff;
+    background: #c0c0c0;
+    position: fixed;
+    left: 220px;
+    bottom: 70px;
+    width: 235px;
+    height: 370px;
+    visibility: hidden;
+
+
+
+}
+
+
+
+
+
+.Calculator form input{
+    border: 0;
+    outline: 0;
+    width: 50px;
+    height: 50px;
+    margin: 2px;
+    cursor: pointer;
+    border: 2px solid #7c7c7c;
+    border-top-color: #fff;
+    border-left-color: #fff;
+    padding-right: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.Calculator form input:active{
+    border: 2px solid #7c7c7c;
+    border-bottom-color: #fff;
+    border-right-color: #fff;
+    transform: translateX(1px) translateY(1px);
+    
+}
+
+.Calculator form .displaydisplay{
+    border: 2px solid #7c7c7c;
+    border-bottom-color: #fff;
+    border-right-color: #fff;
+
+}
+
+form .display{
+    display: flex;
+    width: 228px;
+    margin-right: 2px;
+    margin: 5px 0;    
+}
+
+form .display input{
+    text-align: right;
+    flex: 1;
+
+}
+
+form input.equal{
+    width: 108px;
+    color: red;
+
+} 
+
+form input.operator{
+    color: red;
+}
+
+form input.siffror{
+    color: blue;
+}
+
+.flytta{
+    display: flex;
+    flex-flow: row nowrap;
+    font-weight: bold;
+    justify-content: space-between;
+    width: 225px;
+    height: 27px;
+    padding: 2px 3px 3px;
+    margin: 3px 2px 1px 3px;
+    z-index: 1000;
+
+    background: #000080;
+    color: #fff;
+    padding: 4px;
+    font-weight: bold;
+
+}
+
+.flytta:hover{
+    cursor: move;
+    
+    }
+
+
+
+.Stäng98{
+    background: no-repeat center #ccc;
+    border: 2px solid #7c7c7c;
+    border-top-color: #fff;
+    border-left-color: #fff;
+    height: 17px;
+    width: 17px;
+    float: right;
+    margin-left: 2px;
+    background-image: url(https://win98icons.alexmeub.com/images/close-icon.png);
+
+
+}
+
+
+.Stäng98:active{
+border: 2px solid #7c7c7c;
+border-bottom-color: #fff;
+border-right-color: #fff;
+transform: translateX(1px) translateY(1px);
+
+}

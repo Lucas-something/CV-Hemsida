@@ -1,0 +1,204 @@
+.Aboutme {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 20px;
+    left: 10px;
+  }
+  
+.Aboutmeicon{
+    height: 48px;
+    cursor: pointer;
+    width: 47px;
+    background: url("aboutme.png");
+    background-size: contain;
+}
+
+.Aboutmetext{
+    color: white;
+      font-size: 12px;
+      margin-top: 5px;
+      margin-bottom: 0;
+      cursor: pointer;
+  
+}
+
+
+
+.CV {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 120px;
+    left: 10px;
+  }
+  
+.CVicon{
+    height: 50px;
+    cursor: pointer;
+    width: 55px;
+    background: url("pngwing.com.png");
+    background-size: contain;
+}
+
+.CVtext{
+    color: white;
+      font-size: 12px;
+      margin-top: 5px;
+      margin-bottom: 0;
+      cursor: pointer;
+  
+}
+
+.Github {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 220px;
+  left: 10px;
+  }
+  
+.Githubicon{
+    height: 49px;
+    cursor: pointer;
+    width: 50px;
+    background: url("github.png");
+    background-size: contain;
+}
+
+.Githubtext{
+    color: white;
+      font-size: 12px;
+      margin-top: 5px;
+      margin-bottom: 0;
+      cursor: pointer;
+  
+}
+
+
+
+
+.Linkedin {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 320px;
+  left: 10px;
+  }
+  
+.Linkedinicon{
+    height: 50px;
+    cursor: pointer;
+    width: 55px;
+    background: url("linkedin.png");
+    background-size: contain;
+}
+
+.Linkedintext{
+    color: white;
+      font-size: 12px;
+      margin-top: 5px;
+      margin-bottom: 0;
+      cursor: pointer;
+  
+}
+
+
+
+
+.Calc {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 120px;
+  left: 100px;
+  }
+  
+.Calcicon{
+    height: 38px;
+    cursor: pointer;
+    width: 50px;
+    background: url("mini.png");
+    background-size: contain;
+}
+
+.Calctext{
+    color: white;
+      font-size: 12px;
+      margin-top: 5px;
+      margin-bottom: 0;
+      cursor: pointer;
+  
+}
+
+
+.Soptunna {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 20px;
+  left: 100px;
+  }
+  
+.Soptunnaicon{
+    height: 50px;
+    cursor: pointer;
+    width: 50px;
+    background: url("soptunna.png");
+    background-size: contain;
+}
+
+.Soptunnatext{
+    color: white;
+      font-size: 12px;
+      margin-top: 5px;
+      margin-bottom: 0;
+      cursor: pointer;
+  
+}
+
+.Music {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 220px;
+  left: 100px;
+  }
+  
+.Musicicon{
+    height: 50px;
+    cursor: pointer;
+    width: 50px;
+    background: url("icon.png");
+    background-size: contain;
+}
+
+.Musictext{
+    color: white;
+      font-size: 12px;
+      margin-top: 5px;
+      margin-bottom: 0;
+      cursor: pointer;
+  
+}

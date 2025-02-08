@@ -1,0 +1,58 @@
+#ShutdownWindow{
+
+    border: 2px solid #7c7c7c;
+    border-top-color: #fff;
+    border-left-color: #fff;
+    background: #c0c0c0;
+    position: fixed;
+    left: 50%; /* Adjust left position to center horizontally */
+    top: 50%; /* Adjust top position to center vertically */
+    transform: translate(-50%, -50%); /* Translate to center */
+    width: 300px;
+    height: 200px;
+    z-index: 100000;
+
+
+
+}
+
+
+.topbar{
+    color: blue;
+    display: flex;
+    flex-flow: row nowrap;
+    font-weight: bold;
+    justify-content: space-between;
+    width: calc(100% - 12px);
+    height: 23px;
+    color: white;
+    background: #00a;
+    padding: 2px 3px 3px;
+    margin: 3px 2px 1px 3px;
+    z-index: 1000;
+
+}
+
+
+.ShutdownWindowStäng{
+
+    background: no-repeat center #ccc;
+    border: 2px solid #7c7c7c;
+    border-top-color: #fff;
+    border-left-color: #fff;
+    height: 17px;
+    width: 17px;
+    float: right;
+    margin-left: 2px;
+    background-image: url(https://win98icons.alexmeub.com/images/close-icon.png);
+}
+
+
+
+.ShutdownWindowStäng:active{
+    border: 2px solid #7c7c7c;
+    border-bottom-color: #fff;
+    border-right-color: #fff;
+    transform: translateX(1px) translateY(1px);
+
+}

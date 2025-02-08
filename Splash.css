@@ -1,0 +1,34 @@
+.bootscreen {
+    z-index: 99980986; 
+    position: fixed; 
+    width: 100vw; /* Use viewport width */
+    height: 100vh; /* Use viewport height */
+    background-image: url('http://i.imgur.com/MDImJVj.gif'); 
+
+    background-size: 100% 100%; /* Stretch to fill the container */
+    background-repeat: no-repeat; /* Do not repeat the image */
+
+    -moz-animation: cssAnimation 0s ease-in 5s forwards;
+    -webkit-animation: cssAnimation 0s ease-in 5s forwards;
+    -o-animation: cssAnimation 0s ease-in 5s forwards;
+    animation: cssAnimation 0s ease-in 5s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes cssAnimation {
+    to {
+        width: 0;
+        height: 0;
+        overflow: hidden;
+    }
+}
+
+@-webkit-keyframes cssAnimation {
+    to {
+        width: 0;
+        height: 0;
+        visibility: hidden;
+    }
+}

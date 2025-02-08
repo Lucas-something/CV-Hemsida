@@ -1,0 +1,149 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Prevents horizontal scroll */
+}
+
+* {
+  box-sizing: border-box; /* Includes padding and border in the element's dimensions */
+}
+
+#toolbar{
+  background: #c0c0c0;
+  height: 35px;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  border-top: 2px solid #fff;
+  z-index: 1000; /* Ensures it's on top if needed */
+}
+
+.toolbar-start-menu{
+float: left;
+}
+
+.start-button{
+        background: url(https://win98icons.alexmeub.com/icons/png/windows-0.png) no-repeat 2px center / 24px;
+        padding-left: 28px;
+        padding-right: 5px;
+        height: 29px;
+        margin: 2px 3px;
+        font-weight: bold;
+        border: 2px solid #7c7c7c;
+        border-top-color: #fff;
+        border-left-color: #fff;
+        margin-right: 8px;
+}
+
+.start-button:hover{
+background-color:#9d9b9b;
+cursor: pointer;
+}
+
+.start-button:active{
+    border: 2px solid #7c7c7c;
+    border-bottom-color: #fff;
+    border-right-color: #fff;
+    transform: translateX(1px) translateY(1px);
+}
+
+      
+
+
+
+
+  .toolbar-separator{
+    width: 2px;
+    height: 28px;
+    margin-top: 3px;
+    background: #797979;
+    float: left;
+    border-right: 1px solid #fff;
+  }
+  
+  .toolbar-left{
+    float: left;
+    padding: 0 5px;
+  }
+  
+  .toolbar-icon{
+    background: no-repeat center / auto 20px;
+    width: 25px;
+    height: 25px;
+    border: none;
+    margin-top: 3px;
+    margin: 3px 2px;
+}
+    .toolbar-icon.ie{
+      background-image: url(https://win98icons.alexmeub.com/icons/png/msie1-4.png);
+      padding-left: 28px;
+      padding-right: 5px;
+      height: 29px;
+      margin: 2px 3px;
+      font-weight: bold;
+      border: 2px solid #7c7c7c;
+      border-top-color: #fff;
+      border-left-color: #fff;
+    }
+    .toolbar-icon.ie:hover{
+        background-color:#9d9b9b;
+        cursor: pointer;
+        }
+
+    .toolbar-icon.ie:active{
+            border: 2px solid #7c7c7c;
+            border-bottom-color: #fff;
+            border-right-color: #fff;
+            transform: translateX(1px) translateY(1px);
+        } 
+
+    .toolbar-icon.outlook{
+      background-image: url(https://win98icons.alexmeub.com/icons/png/outlook_express-0.png);
+      padding-left: 28px;
+      padding-right: 5px;
+      height: 29px;
+      margin: 2px 3px;
+      font-weight: bold;
+      border: 2px solid #7c7c7c;
+      border-top-color: #fff;
+      border-left-color: #fff;
+    }
+    .toolbar-icon.outlook:hover{
+        background-color:#9d9b9b;
+        cursor: pointer;
+        }
+
+    .toolbar-icon.outlook:active{
+        border: 2px solid #7c7c7c;
+        border-bottom-color: #fff;
+        border-right-color: #fff;
+        transform: translateX(1px) translateY(1px);
+
+    }
+    
+  
+  .toolbar-right{
+    float: right;
+    margin-top: 2px;
+    margin-left: 5px;
+    margin-right: 3px;
+    width: 70px;
+    height: 25px;
+    border: 2px solid #7c7c7c;
+    border-bottom-color: #fff;
+    border-right-color: #fff;
+    padding-right: 5px;
+    font-weight: bold;
+    font-size: 19px;
+}
+    .time{
+
+      margin-left: 4px;
+      margin-top: 2px;
+      font-size: 80%;
+
+
+
+    }
